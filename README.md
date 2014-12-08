@@ -2,16 +2,18 @@ USEFUL URL
 ============================
 ### Blog
 
+* [老赵点滴](http://blog.zhaojie.me/)
 * [廖雪峰 python git 相关](http://www.liaoxuefeng.com/)
-* [罗朝辉](http://www.cnblogs.com/kesalin/)
+* [云风](http://codingnow.com/)
 * [lucida](http://zh.lucida.me/)
-* [西川善司](http://www.z-z-z.jp/BLOG/)
+* [老罗的Android之旅](http://blog.csdn.net/Luoshengyang/)
+* [雨松MOMO](http://www.xuanyusong.com/)
+* [罗朝辉](http://www.cnblogs.com/kesalin/)
+* [陆泽西](http://www.luzexi.com/)
 * [xak的专栏](http://blog.csdn.net/cubesky/)
 * [酷壳](http://coolshell.cn/)
 * [Lenky](http://www.lenky.info/)
-* [雨松MOMO](http://www.xuanyusong.com/)
 * [xiaoke](http://blog.1vr.cn/)
-* [云风](http://codingnow.com/)
 * [阮一峰](http://www.ruanyifeng.com/blog/archives.html)
 * [CodingFarmer](http://golanger.cn/)
 * [突壳开源](http://www.tok.cc/)
@@ -23,9 +25,7 @@ USEFUL URL
 * [四火的唠叨](http://www.raychase.net/)
 * [Unity热更新解决方案](http://www.cnblogs.com/crazylights/p/3897742.html/)
 * [Unity热更新解决方案破解libmono.so](http://tieba.baidu.com/p/3047398187/)
-* [lucida](http://zh.lucida.me/)
-* [老罗的Android之旅](http://blog.csdn.net/Luoshengyang/)
-* [陆泽西](http://www.luzexi.com/)
+* [西川善司](http://www.z-z-z.jp/BLOG/)
 
 ### 图形学
 
