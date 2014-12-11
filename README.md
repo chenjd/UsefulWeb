@@ -3,6 +3,7 @@ USEFUL URL
 ### Blog
 
 * [老赵点滴](http://blog.zhaojie.me/)
+* [Dennis Gao](http://www.cnblogs.com/gaochundong/)
 * [廖雪峰 python git 相关](http://www.liaoxuefeng.com/)
 * [云风](http://codingnow.com/)
 * [lucida](http://zh.lucida.me/)
