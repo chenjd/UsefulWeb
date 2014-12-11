@@ -1,13 +1,20 @@
 USEFUL URL
 ============================
-### Blog
+
+###自己的Blog当然要顶O(∩_∩)O哈！
+* [慕容小匹夫](http://www.cnblogs.com/murongxiaopifu/)
+
+
+### 要经常去看的Blog
 
 * [老赵点滴](http://blog.zhaojie.me/)
 * [Dennis Gao](http://www.cnblogs.com/gaochundong/)
 * [廖雪峰 python git 相关](http://www.liaoxuefeng.com/)
 * [云风](http://codingnow.com/)
 * [lucida](http://zh.lucida.me/)
+* [左耳朵耗子](http://coolshell.cn/)
 * [老罗的Android之旅](http://blog.csdn.net/Luoshengyang/)
+* [李总的博客](http://www.cnblogs.com/crazylights/)
 * [雨松MOMO](http://www.xuanyusong.com/)
 * [罗朝辉](http://www.cnblogs.com/kesalin/)
 * [陆泽西](http://www.luzexi.com/)
@@ -21,45 +28,19 @@ USEFUL URL
 * [juvenxu](http://www.juvenxu.com/)
 * [angryant](http://angryant.com/)
 * [r6](http://www.r66r.net/)
-* [左耳朵耗子](http://coolshell.cn/)
 * [小胡子哥](http://www.cnblogs.com/hustskyking/)
 * [四火的唠叨](http://www.raychase.net/)
+
+
+###U3D热更新相关
+
 * [Unity热更新解决方案](http://www.cnblogs.com/crazylights/p/3897742.html/)
 * [Unity热更新解决方案破解libmono.so](http://tieba.baidu.com/p/3047398187/)
-* [西川善司](http://www.z-z-z.jp/BLOG/)
-
-### 图形学
-
-* [opengpu](http://www.opengpu.org/forum.php)
-* [nehe](http://nehe.gamedev.net/)
-* [nehe-cn](http://www.yakergong.net/nehe/)
-* [unity-unite](http://unity3d.com/unite/archive)
-* [codesampler](http://www.codesampler.com/)
-* [nate robins](http://user.xmission.com/~nate/index.html)
-* [nvidia-developer](https://developer.nvidia.com/)
-* [gamedev](http://www.gamedev.net/)
-* [wiki-cg](http://en.wikibooks.org/wiki/Cg_Programming)
-* [wiki-glsl](http://en.wikibooks.org/wiki/GLSL_Programming)
-* [wiki-category-cg](http://en.wikibooks.org/wiki/Category:Cg_Programming)
-* [wiki-category-glsl](http://en.wikibooks.org/wiki/Category:GLSL_Programming)
-* [wiki-category-shader](http://en.wikibooks.org/wiki/Category:Shading_languages)
-* [wiki-category-language](http://en.wikibooks.org/wiki/Category:Computer_programming_languages)
-* [wiki-title-shader](http://wiki.unity3d.com/index.php?title=Shaders)
-* [wiki-unity-cg](http://en.wikibooks.org/wiki/Cg_Programming/Unity)
-* [cgcookie](http://cgcookie.com/)
-* [unity-built-in-shader](http://unity3d.com/unity/download/archive/)
-* [unity-manual-graphics](http://docs.unity3d.com/Manual/Graphics.html)
-* [nvidia-gpu-gems-demo](https://developer.nvidia.com/content/gpu-gems-downloads)
-* [nvidia-gpu-gems-book123](https://developer.nvidia.com/gpugems/GPUGems)
-* [nvidia-archive](https://developer.nvidia.com/archive)
-* [shaderx](http://tog.acm.org/resources/shaderx/)
-* [西川善司 3D图形技术 原文1-99回](http://news.mynavi.jp/column/graphics/)
-* [西川善司 3D图形技术 译文1-8回](http://www.opengpu.org/forum.php?mod=viewthread&tid=7376&extra=page%3D1)
-* [西川善司 3D图形技术 译文9-13回](http://www.opengpu.org/forum.php?mod=viewthread&tid=7550)
 
 
-### 开发者社区
+### 值得一去的开发者社区
 
+* [腾讯大讲堂](http://djt.qq.com/)
 * [9ria](http://www.9ria.com/)
 * [极客公园](http://www.geekpark.net/)
 * [channel9](http://channel9.msdn.com/)
@@ -72,56 +53,46 @@ USEFUL URL
 * [QQ游戏设计中心](http://gdc.qq.com/)
 * [腾讯ISUX](http://isux.tencent.com/)
 * [腾讯游戏官方设计团队](http://tgideas.qq.com/)
-* [腾讯大讲堂](http://djt.qq.com/)
 * [鱼C工作室](http://bbs.fishc.com/portal.php)
 
 
-### github org
+### 一些github org,离组织更近一点总是好的
 
 * [Microsoft](https://github.com/Microsoft)
 * [Unity3d](https://github.com/Unity-Technologies)
-* [Unity3d-jp](https://github.com/unity3d-jp)
 * [Adobe](https://github.com/adobe)
 * [NVIDIA](https://github.com/NVIDIAGameWorks)
 
-### 在线工具
+
+### 常用的在线工具
 
 * [正则表达式可视化](http://jex.im/regulex/)
+* [json解析](http://www.bejson.com/)
 
-### 资讯
+
+### 休息的时候可以看看资讯
 
 * [游戏邦](http://gamerboom.com/)
+* [游民时空](http://www.gamersky.com/)
 * [极客公园](http://www.geekpark.net/)
 * [灵感起源](http://www.ideasr.com/)
 * [gameres](http://www.gameres.com/)
 
 
+### 牛逼的教材
 
-### 编程语言
-
+* [msdn C# 教程](http://msdn.microsoft.com/zh-cn/library/aa288436%28v=vs.71%29.aspx/)
 * [JavaScript 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
 
 
-### Free
+### 算法,数学与刷题网站
 
-* [IT eBooks](http://it-ebooks.info/)
-* [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw/) (简体)
-* [CG织梦网](http://www.cgdream.org/)
-* [蓝色理想](http://www.blueidea.com/)
-* [翼虎网](http://www.yiihuu.com/)
-* [蓝色理想](http://www.blueidea.com/)
-* [第九游戏](http://www.then9.com/)
-* [原画](http://www.artstation.com/)
-* [w3school离线资源](http://www.flygon.net/archives/427)
-
-### 算法与数学
-
-* [Project Euler](https://projecteuler.net/)
 * [leetcode](https://oj.leetcode.com/problems/)
+* [百度百科经典算法链接集](http://www.cnblogs.com/oldman/articles/2592319.html)
 * [matrix67](http://blog.csdn.net/column/details/algorithm-easyword.html)
 * [白话经典算法](http://www.matrix67.com/blog/)
 * [《计算机程序的构造和解释》答案](http://sicp.readthedocs.org/en/latest/)
-* [百度百科经典算法链接集](http://www.cnblogs.com/oldman/articles/2592319.html)
+* [Project Euler](https://projecteuler.net/)
 
 
 ### 文档
@@ -158,8 +129,50 @@ USEFUL URL
 * [携程UED](http://ued.ctrip.com/blog/)
 
 
+### Free
 
-### 一些汇总
+* [IT eBooks](http://it-ebooks.info/)
+* [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw/) (简体)
+* [CG织梦网](http://www.cgdream.org/)
+* [蓝色理想](http://www.blueidea.com/)
+* [翼虎网](http://www.yiihuu.com/)
+* [蓝色理想](http://www.blueidea.com/)
+* [第九游戏](http://www.then9.com/)
+* [原画](http://www.artstation.com/)
+* [w3school离线资源](http://www.flygon.net/archives/427)
+
+
+### 关于图形学的
+
+* [opengpu](http://www.opengpu.org/forum.php)
+* [nehe](http://nehe.gamedev.net/)
+* [nehe-cn](http://www.yakergong.net/nehe/)
+* [unity-unite](http://unity3d.com/unite/archive)
+* [codesampler](http://www.codesampler.com/)
+* [nate robins](http://user.xmission.com/~nate/index.html)
+* [nvidia-developer](https://developer.nvidia.com/)
+* [gamedev](http://www.gamedev.net/)
+* [wiki-cg](http://en.wikibooks.org/wiki/Cg_Programming)
+* [wiki-glsl](http://en.wikibooks.org/wiki/GLSL_Programming)
+* [wiki-category-cg](http://en.wikibooks.org/wiki/Category:Cg_Programming)
+* [wiki-category-glsl](http://en.wikibooks.org/wiki/Category:GLSL_Programming)
+* [wiki-category-shader](http://en.wikibooks.org/wiki/Category:Shading_languages)
+* [wiki-category-language](http://en.wikibooks.org/wiki/Category:Computer_programming_languages)
+* [wiki-title-shader](http://wiki.unity3d.com/index.php?title=Shaders)
+* [wiki-unity-cg](http://en.wikibooks.org/wiki/Cg_Programming/Unity)
+* [cgcookie](http://cgcookie.com/)
+* [unity-built-in-shader](http://unity3d.com/unity/download/archive/)
+* [unity-manual-graphics](http://docs.unity3d.com/Manual/Graphics.html)
+* [nvidia-gpu-gems-demo](https://developer.nvidia.com/content/gpu-gems-downloads)
+* [nvidia-gpu-gems-book123](https://developer.nvidia.com/gpugems/GPUGems)
+* [nvidia-archive](https://developer.nvidia.com/archive)
+* [shaderx](http://tog.acm.org/resources/shaderx/)
+* [西川善司 3D图形技术 原文1-99回](http://news.mynavi.jp/column/graphics/)
+* [西川善司 3D图形技术 译文1-8回](http://www.opengpu.org/forum.php?mod=viewthread&tid=7376&extra=page%3D1)
+* [西川善司 3D图形技术 译文9-13回](http://www.opengpu.org/forum.php?mod=viewthread&tid=7550)
+
+
+###不知道归到哪类的
 
 * [前端技能汇总](https://github.com/JacksonTian/fks)
 * [free-programming-books-zh_CN](https://github.com/justjavac/free-programming-books-zh_CN)
