@@ -1,4 +1,4 @@
-USEFUL URL
+USEFUL URL 我的收藏
 ============================
 
 ###自己的Blog当然要顶O(∩_∩)O哈！
@@ -31,6 +31,12 @@ USEFUL URL
 * [小胡子哥](http://www.cnblogs.com/hustskyking/)
 * [四火的唠叨](http://www.raychase.net/)
 
+
+###知识补遗
+
+* [c#---delegate关键字](http://www.cnblogs.com/wenjiang/archive/2013/03/12/2954913.html)
+* [C#方法的参数 Ref Out Params 4种类型的参数](http://www.cnblogs.com/kissdodog/archive/2013/05/11/3072815.html)
+* [浅谈.NET中的类型和装箱/拆箱原理](http://www.cnblogs.com/DebugLZQ/archive/2012/09/02/2667835.html)
 
 ###U3D热更新相关
 
