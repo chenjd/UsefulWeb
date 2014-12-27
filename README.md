@@ -37,6 +37,8 @@ USEFUL URL 我的收藏
 * [c#---delegate关键字](http://www.cnblogs.com/wenjiang/archive/2013/03/12/2954913.html)
 * [C#方法的参数 Ref Out Params 4种类型的参数](http://www.cnblogs.com/kissdodog/archive/2013/05/11/3072815.html)
 * [浅谈.NET中的类型和装箱/拆箱原理](http://www.cnblogs.com/DebugLZQ/archive/2012/09/02/2667835.html)
+* [Linq之路](http://www.cnblogs.com/lifepoem/archive/2011/12/16/2288017.html/)
+* [c# 扩展方法奇思妙用](http://www.cnblogs.com/ldp615/archive/2009/08/07/1541404.html/)
 
 ###U3D热更新相关
 
@@ -96,6 +98,7 @@ USEFUL URL 我的收藏
 
 * [leetcode](https://oj.leetcode.com/problems/)
 * [百度百科经典算法链接集](http://www.cnblogs.com/oldman/articles/2592319.html)
+* [坐在马桶上看算法](http://ahalei.blog.51cto.com/)
 * [matrix67](http://blog.csdn.net/column/details/algorithm-easyword.html)
 * [白话经典算法](http://www.matrix67.com/blog/)
 * [《计算机程序的构造和解释》答案](http://sicp.readthedocs.org/en/latest/)
