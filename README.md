@@ -3,6 +3,7 @@ USEFUL URL 我的收藏
 
 ###自己的Blog当然要顶O(∩_∩)O哈！
 * [慕容小匹夫](http://www.cnblogs.com/murongxiaopifu/)
+* [游戏蛮牛系列文章](http://www.unitymanual.com/forum.php?mod=forumdisplay&fid=47&filter=typeid&typeid=227)
 
 
 ### 要经常去看的Blog
@@ -48,6 +49,8 @@ USEFUL URL 我的收藏
 
 ### 值得一去的开发者社区
 
+* [mono开发者联盟](http://www.51mono.com/)
+* [游戏蛮牛](http://unitymanual.com/)
 * [腾讯大讲堂](http://djt.qq.com/)
 * [9ria](http://www.9ria.com/)
 * [极客公园](http://www.geekpark.net/)
@@ -62,6 +65,9 @@ USEFUL URL 我的收藏
 * [腾讯ISUX](http://isux.tencent.com/)
 * [腾讯游戏官方设计团队](http://tgideas.qq.com/)
 * [鱼C工作室](http://bbs.fishc.com/portal.php)
+
+### 一些官网，其实答案都在官网中
+* [Mono](http://www.mono-project.com)
 
 
 ### 一些github org,离组织更近一点总是好的
