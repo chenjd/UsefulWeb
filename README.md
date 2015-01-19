@@ -40,6 +40,7 @@ USEFUL URL 我的收藏
 * [浅谈.NET中的类型和装箱/拆箱原理](http://www.cnblogs.com/DebugLZQ/archive/2012/09/02/2667835.html)
 * [Linq之路](http://www.cnblogs.com/lifepoem/archive/2011/12/16/2288017.html/)
 * [c# 扩展方法奇思妙用](http://www.cnblogs.com/ldp615/archive/2009/08/07/1541404.html/)
+* [Windbg调试命令详解](http://www.yiiyee.cn/Blog/windbg/)
 
 ###U3D热更新相关
 
