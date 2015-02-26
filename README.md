@@ -32,6 +32,12 @@ USEFUL URL 我的收藏
 * [小胡子哥](http://www.cnblogs.com/hustskyking/)
 * [四火的唠叨](http://www.raychase.net/)
 
+###U3D补遗
+
+* [视频播放功能](http://blog.csdn.net/qinyuanpei/article/details/24130347)
+* [换装系统的实现](http://blog.csdn.net/qinyuanpei/article/details/24393683)
+* [怪物AI](http://blog.csdn.net/qinyuanpei/article/details/22748829)
+
 
 ###知识补遗
 
@@ -199,3 +205,236 @@ USEFUL URL 我的收藏
 * [程序员应该读的书](http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html)
 * [程序员应该读的非编程的书(stackoverflow)](http://stackoverflow.com/questions/38210/what-non-programming-books-should-programmers-read)
 * [程序员应该读的书(stackoverflow)](http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read/1713#1713)
+
+<h2>前言：</h2>
+<p>其实小匹夫在U3D的开发中一直对U3D的跨平台能力很好奇。到底是什么原理使得U3D可以跨平台呢？后来发现了Mono的作用，并进一步了解到了CIL的存在。所以，作为一个对Unity3D跨平台能力感兴趣的U3D程序猿，小匹夫如何能不关注CIL这个话题呢？那么下面各位看官就拾起语文老师教导我们的作文口诀（<a href="#why" target="_blank">Why</a>，<a href="#what" target="_blank">What</a>，<a href="#how" target="_blank">How</a>），和小匹夫一起走进CIL的世界吧~</p>
+<h2><a name="why"></a>Why?</h2>
+<p>回到本文的题目，U3D或者说Mono的跨平台是如何做到的？</p>
+<p>如果换做小匹夫或者看官你来做，应该怎么实现一套代码对应多种平台呢？</p>
+<p>其实原理想想也简单，生活中也有很多可以参考的例子，比如下图（谁让小匹夫是做移动端开发的呢，只能物尽其用从自己身边找例子了T.T）：</p>
+<p><img src="http://images.cnitblog.com/blog/686199/201501/082157220463329.png" alt="" /></p>
+<p>像这样一根线，管你是安卓还是ios都能充电。所以从这个意义上，这货也实现了跨平台。那么我们能从它身上学到什么呢？对的，那就是从一样的能源（电）到不同的平台（ios，安卓）之间需要一个中间层过度转换一下。</p>
+<p>那么来到U3D为何能跨平台，简而言之，其实现原理在于使用了叫CIL（Common Intermediate Language通用中间语言，也叫做MSIL微软中间语言）的一种代码指令集，CIL可以在任何支持CLI（Common Language Infrastructure，通用语言基础结构）的环境中运行，就像.NET是微软对这一标准的实现，Mono则是对CLI的又一实现。由于CIL能运行在所有支持CLI的环境中，例如刚刚提到的.NET运行时以及Mono运行时，也就是说和具体的平台或者CPU无关。这样就无需根据平台的不同而部署不同的内容了。所以到这里，各位也应该恍然大了。代码的编译只需要分为两部分就好了嘛：</p>
+<ol>
+<li>从代码本身到CIL的编译（其实之后CIL还会被编译成一种位元码，生成一个CLI assembly）</li>
+<li>运行时从CIL（其实是CLI assembly，不过为了直观理解，不必纠结这种细节）到本地指令的即时编译（这就引出了为何U3D官方没有提供热更新的原因：<strong>在iOS平台中Mono无法使用JIT引擎，而是以Full AOT模式运行的，所以此处说的额即时编译不包括IOS</strong>）</li>
+</ol>
+<h2><a name="what"></a>What？</h2>
+<p>上文也说了CIL是指令集，但是不是还是太模糊了呢？所以语文老师教导我们，描述一个东西时肯定要先从外貌写起。遵循老师的教导，我们不妨先通过工具来看看CIL到底长什么样。</p>
+<p>工具就是ildasm了。下面小匹夫写一个简单的.cs看看生成的CIL代码长什么样。</p>
+<p>C#代码：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">class</span><span style="color: #000000;"> Class1
+{
+    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span> Main(<span style="color: #0000ff;">string</span><span style="color: #000000;">[] args)
+    {
+            System.Console.WriteLine(</span><span style="color: #800000;">"</span><span style="color: #800000;">hi</span><span style="color: #800000;">"</span><span style="color: #000000;">);
+        }
+}</span></pre>
+</div>
+<p>CIL代码：</p>
+<div class="cnblogs_code">
+<pre>.<span style="color: #0000ff;">class</span> <span style="color: #0000ff;">private</span><span style="color: #000000;"> auto ansi beforefieldinit Class1
+       extends [mscorlib]System.Object
+{
+  .method </span><span style="color: #0000ff;">public</span> hidebysig <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span>  Main(<span style="color: #0000ff;">string</span><span style="color: #000000;">[] args) cil managed
+  {
+      .entrypoint
+      </span><span style="color: #008000;">//</span><span style="color: #008000;"> 代码大小       13 (0xd)</span>
+      .maxstack  <span style="color: #800080;">8</span><span style="color: #000000;">
+      IL_0000:  nop
+      IL_0001:  ldstr      </span><span style="color: #800000;">"</span><span style="color: #800000;">hi</span><span style="color: #800000;">"</span><span style="color: #000000;">
+      IL_0006:  call       </span><span style="color: #0000ff;">void</span> [mscorlib]System.Console::Writepan><span style="color: #008000;">//</span><span style="color: #008000;"> ctive）</strong>，用于描述.NET程序集总体结构的标记。为å align="center" width="4%" height="3">loc</td>
+  <td align="center" width="ytes</td>
+  <td rowspan="7" align="center" width="14%" height="1">C#里面的int，其他的类型例如short需要通过conv转换</td>
+  <td align="ct="0">(short)</td>
+  <td align="center" width="14%" height="0">后面跟一个字节以内的整型数值（有符号的）</td>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </trcenter" width="7%" height="13">store</td>
+  <td colspan="2" align="center" width="14%" height="13">计算堆栈的顶部弹出当前值，相当于：<13">?</td>
+  <td rowspan="8" align="center" width="14%" height="13">?</td>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tr>
+  <tr>
+  <td align="center" width="4%" height="2">.i2</td>
+  <td align="center" width="7%" height="2">int 2 bytes</td>
+  <td align="center" width="14%" height="2">C#里面的short</td>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tr>
+  ght="2">?</td>
+  <td rowspan="2" align="center" width="7%" height="2">?</td>
+  <td rowspan="2" align="center" width="14%" height="2">?</td>
+  <td align="center" width="4%" height="1">?</td>
+  <td align="center" width="7%" height="1">?</td>
+  <td align="center" width="14%" height="1">后面跟四个字节的偏移量（有符号）</td>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tr>
+  <tr>
+  <td align="center" width="4%" height="1">.s</td>
+  <td align="center" width="7%" height="1">(short)</td>
+  <td align="center" width="14%" height="1">后面跟一个字节的偏移量（有符号）</td>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tr>
+  <tr>
+  <td align="center" width="4%" height="2">false</td>
+  <td align="center" width="7%" height="2">false</td>
+  <td align="center" width="14%" htd>
+  <td align="center" width="7%" height="1">greater than or equal to</td>
+  <td align="center" width="14%" height="1">大于等于</td>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  00;">大学时候学单片机（大概是8086，记不清了）的时候记得做加法大概是这样的：</span></span></p>
+  <div class="cnblogs_code">
+  <pre>add eax,-<span style="color: #800080;">2</span></pre>
+  </div>
+  <p>其中的eax是啥？寄存器。所以如果CIL处理数据要通过cpuçoid</span><span style="color: #000000;"> TellName(<span style="color: #3366ff;">string</span> name)
+      {
+              System.Console.WriteLine(name</span><span style="color: #000000;">);
+          }
+  
+      </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <spantyle="color: #008000;">计算</span>
+    IL_0004:  stloc.<span style="color: #800080;">0</span>      <span style="color: #008000;">//</span><span#0000ff;">new</span><span style="color: #000000;"> Murong();
+      murong.Tell®题，那么接近文章的结尾咱们就再来</span></p>
+          <p><span sty类似运行时的功能是将IL再编译成c++，再由c++编译成原ç>
+          <p>为啥呢？为啥C#写的代码能跑在MAC上呢？这就不得不漚使用到JIT，同时我们看到了生成了一个适应小匹夫的MACçp>当然上文也说了，IOS平台是禁止使ç¼。</li>
+          <li>这种位元码运行在虚拟机中(.net m/murongxiaopifu" target="_blank">慕容小匹夫</a></span></spa"913">如果第一个值大于第二个值，则将控制转移到çtd width="913">如果 value 为 true、非空或非零，则将控制转移到目标指令（短格式）。</td>
+                  
+                  
+                  </tr>
+                  <tr>
+                  <td>Call</td>
+                  <td width="913">调用由传递的方法说明符指示的方法。</td>
+                  
+                  
+                  <
+                  
+                  </tr>
+                  <tr>
+                  <td>Cgt.Un</td>
+                  <td width="913">比较两个无符号的或ä/td>
+                  
+                  
+                  </tr>
+                  <tr>
+                  <td>Conv.Ovf.I1.Un</td>
+                  <td width="913">将位于计算å于计算堆栈顶部的有符号值转换为 unsigned int16 并将其æd>Conv.R.Un</td>
+  <td width="913">将位于计算åt64。</td>
+  
+  
+  </tr>
+  <tr>
+  <td>Cpblk</td>
+  <td width="913">åd>
+  
+  
+  </tr>
+  <tr>
+  <td>Ldarg.S</td>
+  <td width="913">将参数（ç/td>
+  <td width="913">将整数值 5 作为 int32 推送到计算堆®¡算堆栈上。</td>
+  
+  
+  </tr>
+  <tr>
+  <td>Ldelem</td>
+  <td width="913">按组索引处的 float32 类型的元素作为 F 类型（浮点型）加财引的数组元素的地址作为 &amp&nbsp;类型（托管指针）加载åtd>Ldloc</td>
+  <td width="913">将指定索引处的局部变量加载到輈缩写形式）。</td>
+  
+  
+  </tr>
+  <tr>
+  <td>Localloc</td>
+  <td width="913">är>
+  <tr>
+  <td>Newobj</td>
+  <td width="913">创建一个值类型的新对象或新实例，并将对象引用（O 类型）推送到计算堆栈上。<计算堆栈上。</td>
+  
+  
+  </tr>
+  <tr>
+  <td>Ret</td>
+  <td width="913">从当前方法返回，并将返回值（如果存在）从调用方的计算堆栾的地址存储 float64 类型的值。</td>
+  
+  
+  </tr>
+  <tr>
+  <td>Stind.Ref</td>
+  <td width="913">存储所提供地址处的对象引用值。<>>}}
