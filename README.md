@@ -56,6 +56,7 @@ USEFUL URL 我的收藏
 
 ### 值得一去的开发者社区
 
+* [WooYun知识库](http://drops.wooyun.org/)
 * [mono开发者联盟](http://www.51mono.com/)
 * [游戏蛮牛](http://unitymanual.com/)
 * [腾讯大讲堂](http://djt.qq.com/)
