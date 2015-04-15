@@ -8,6 +8,8 @@ USEFUL URL 我的收藏
 
 ### 要经常去看的Blog
 
+* [Eric Lippet](http://ericlippert.com/)
+* [Jon Skeet](http://codeblog.jonskeet.uk/)
 * [老赵点滴](http://blog.zhaojie.me/)
 * [Dennis Gao](http://www.cnblogs.com/gaochundong/)
 * [廖雪峰 python git 相关](http://www.liaoxuefeng.com/)
@@ -31,6 +33,13 @@ USEFUL URL 我的收藏
 * [r6](http://www.r66r.net/)
 * [小胡子哥](http://www.cnblogs.com/hustskyking/)
 * [四火的唠叨](http://www.raychase.net/)
+
+
+###Project
+
+* [Mono Project](https://github.com/mono)
+* [.NET Foundation](https://github.com/dotnet)
+
 
 ###U3D补遗
 
