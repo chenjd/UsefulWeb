@@ -102,6 +102,7 @@ USEFUL URL 我的收藏
 ### 算法,数学与刷题网站
 
 * [leetcode](https://oj.leetcode.com/problems/)
+* [leetcode参考](https://github.com/chenjd/leetcode)
 * [百度百科经典算法链接集](http://www.cnblogs.com/oldman/articles/2592319.html)
 * [坐在马桶上看算法](http://ahalei.blog.51cto.com/)
 * [matrix67](http://blog.csdn.net/column/details/algorithm-easyword.html)
