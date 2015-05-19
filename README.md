@@ -109,6 +109,7 @@ USEFUL URL 我的收藏
 * [白话经典算法](http://www.matrix67.com/blog/)
 * [《计算机程序的构造和解释》答案](http://sicp.readthedocs.org/en/latest/)
 * [Project Euler](https://projecteuler.net/)
+* [七月算法](http://www.julyedu.com/)
 
 
 ### 文档
