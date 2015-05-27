@@ -95,6 +95,7 @@ USEFUL URL 我的收藏
 ### 牛逼的教材
 
 * [msdn C# 教程](http://msdn.microsoft.com/zh-cn/library/aa288436%28v=vs.71%29.aspx/)
+* [Design Guidelines for Developing Class Libraries](https://msdn.microsoft.com/en-us/library/vstudio/ms229042(v=vs.100).aspx)
 * [JavaScript中文网](http://www.itxueyuan.org/javascript/)
 * [JavaScript 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
 
