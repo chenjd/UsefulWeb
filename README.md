@@ -99,6 +99,7 @@ USEFUL URL 我的收藏
 * [Design Guidelines for Developing Class Libraries](https://msdn.microsoft.com/en-us/library/vstudio/ms229042(v=vs.100).aspx)
 * [JavaScript中文网](http://www.itxueyuan.org/javascript/)
 * [JavaScript 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
+* [Memory Management Referenc 牛逼的内存管理参考](http://www.memorymanagement.org/)
 
 
 ### 算法,数学与刷题网站
