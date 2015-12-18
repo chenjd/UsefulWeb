@@ -104,6 +104,9 @@ USEFUL URL 我的收藏
 
 ### 算法,数学与刷题网站
 
+* [Algorithms, 4th Edition](http://algs4.cs.princeton.edu/home/)
+* [Acm之家](http://www.acmerblog.com/)
+* [VisuAlgo](http://visualgo.net/)
 * [leetcode](https://oj.leetcode.com/problems/)
 * [leetcode参考](https://github.com/chenjd/leetcode)
 * [百度百科经典算法链接集](http://www.cnblogs.com/oldman/articles/2592319.html)
